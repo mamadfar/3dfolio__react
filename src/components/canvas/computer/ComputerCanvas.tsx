@@ -25,6 +25,7 @@ const ComputerCanvas = () => {
 
     return (
         <Canvas
+            className="cursor-grab"
             frameloop="demand"
             shadows
             camera={{position: [20, 3, 5], fov: 25}} // [x-axis, y-axis, z-axis], fov: field of view

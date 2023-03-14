@@ -1,10 +1,10 @@
 import {FC} from "react";
-import {IServices} from "../../models/constants.model";
+import {IService} from "../../models/constants.model";
 import Tilt from "react-parallax-tilt";
 import {motion} from "framer-motion";
 import {fadeIn} from "../../utils/motion";
 
-interface IServiceCardProps extends IServices {
+interface IServiceCardProps extends IService {
     index: number,
 }
 

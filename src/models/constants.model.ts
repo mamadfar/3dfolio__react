@@ -1,10 +1,9 @@
-import {ReactNode} from "react";
 
-export interface INavLinks {
+export interface INavLink {
     id: string;
     title: string;
 }
-export interface IServices {
+export interface IService {
     id: number;
     title: string;
     icon: string;
@@ -20,13 +19,13 @@ export interface IExperience {
     points: string[];
 }
 
-export interface ITechnologies {
+export interface ITechnology {
     id: number;
     name: string;
     icon: string;
 }
 
-export interface ITestimonials {
+export interface ITestimonial {
     id: number;
     testimonial: string;
     name: string;
@@ -35,14 +34,16 @@ export interface ITestimonials {
     image: string;
 }
 
-export interface IProjects {
+export interface IProject {
     id: number;
     name: string;
     description: string;
     tags: {
+        id: number,
         name: string;
         color: string;
     }[];
     image: string;
-    source_code_link: string;
+    source_code_link?: string;
+    app_link?: string;
 }

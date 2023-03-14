@@ -5,6 +5,6 @@ export {default as CanvasLoader} from "./CanvasLoader";
 export {default as About} from "./about/About";
 export {default as Tech} from "./Tech";
 export {default as Experience} from "./experience/Experience";
-export {default as Works} from "./Works";
-export {default as Feedbacks} from "./Feedbacks";
+export {default as Works} from "./works/Works";
+export {default as Feedbacks} from "./testimonial/Feedbacks";
 export {default as Contact} from "./Contact";

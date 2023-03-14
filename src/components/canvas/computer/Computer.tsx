@@ -17,7 +17,7 @@ const Computer:FC<IComputerProps> = ({isMobile}) => {
                 angle={0.12}
                 penumbra={1}
                 intensity={1}
-                castShadow
+                castShadow={true}
                 shadow-mapSize={1024}
             />
             <primitive

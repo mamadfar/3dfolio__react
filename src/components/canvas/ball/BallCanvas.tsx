@@ -11,7 +11,7 @@ interface IBallCanvasProps {
 const BallCanvas: FC<IBallCanvasProps> = ({icon}) => {
     return (
         <Canvas
-            frameloop="demand"
+            frameloop="always"
             gl={{preserveDrawingBuffer: true}}
         >
             <Suspense fallback={<CanvasLoader/>}>

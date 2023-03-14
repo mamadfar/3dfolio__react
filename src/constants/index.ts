@@ -13,20 +13,20 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
+    // figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
+    citronity,
+    hamimohajer,
+    logoPlaceholder,
+    // carrent,
     jobit,
     tripguide,
-    threejs
+    // threejs,
+    next, sass, antDesign, bootstrap, devsteam
 } from "../assets";
-import {IExperience, INavLinks, IProjects, IServices, ITechnologies, ITestimonials} from "../models/constants.model";
+import {IExperience, INavLink, IProject, IService, ITechnology, ITestimonial} from "../models/constants.model";
 
-export const navLinks:ReadonlyArray<INavLinks> = [
+export const navLinks: ReadonlyArray<INavLink> = [
     {
         id: "about",
         title: "About",
@@ -41,7 +41,7 @@ export const navLinks:ReadonlyArray<INavLinks> = [
     },
 ];
 
-export const services:ReadonlyArray<IServices> = [
+export const services: ReadonlyArray<IService> = [
     {
         id: 1,
         title: "Web Developer",
@@ -49,7 +49,7 @@ export const services:ReadonlyArray<IServices> = [
     },
     {
         id: 2,
-        title: "React Native Developer",
+        title: "React Developer",
         icon: mobile,
     },
     {
@@ -59,12 +59,12 @@ export const services:ReadonlyArray<IServices> = [
     },
     {
         id: 4,
-        title: "Content Creator",
+        title: "Frontend Engineer",
         icon: creator,
     },
 ];
 
-export const technologies: ReadonlyArray<ITechnologies> = [
+export const technologies: ReadonlyArray<ITechnology> = [
     {
         id: 1,
         name: "HTML 5",
@@ -102,34 +102,49 @@ export const technologies: ReadonlyArray<ITechnologies> = [
     },
     {
         id: 8,
+        name: "Ant Design",
+        icon: antDesign,
+    },
+    {
+        id: 9,
+        name: "Bootstrap",
+        icon: bootstrap,
+    },
+    {
+        id: 10,
         name: "Node JS",
         icon: nodejs,
     },
     {
-        id: 9,
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        id: 10,
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         id: 11,
+        name: "Next JS",
+        icon: next,
+    },
+    // {
+    //     id: 12,
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
+    {
+        id: 13,
         name: "git",
         icon: git,
     },
+    // {
+    //     id: 14,
+    //     name: "figma",
+    //     icon: figma,
+    // },
     {
-        id: 12,
-        name: "figma",
-        icon: figma,
-    },
-    {
-        id: 13,
+        id: 15,
         name: "docker",
         icon: docker,
     },
+    {
+        id: 16,
+        name: "SASS",
+        icon: sass,
+    }
 ];
 
 export const experiences: ReadonlyArray<IExperience> = [
@@ -137,7 +152,7 @@ export const experiences: ReadonlyArray<IExperience> = [
         id: 1,
         title: "Senior Front End Engineer",
         company_name: "Citronity",
-        icon: starbucks,
+        icon: citronity,
         iconBg: "#383E56",
         date: "Oct 2021 - Present",
         points: [
@@ -151,8 +166,8 @@ export const experiences: ReadonlyArray<IExperience> = [
         id: 2,
         title: "Senior Front End Engineer",
         company_name: "Hamimohajer",
-        icon: tesla,
-        iconBg: "#E6DEDD",
+        icon: hamimohajer,
+        iconBg: "#383E56",
         date: "Oct 2020 - Oct 2021",
         points: [
             "Optimized dashboard and website to boost user attention and satisfaction by 40%.",
@@ -165,7 +180,7 @@ export const experiences: ReadonlyArray<IExperience> = [
         id: 3,
         title: "Front End Engineer",
         company_name: "Tadbir Hesab Mohaseban",
-        icon: shopify,
+        icon: logoPlaceholder,
         iconBg: "#383E56",
         date: "Jan 2019 - Oct 2020",
         points: [
@@ -178,8 +193,8 @@ export const experiences: ReadonlyArray<IExperience> = [
         id: 4,
         title: "Front End Developer",
         company_name: "Novin Tarh Gostaran",
-        icon: meta,
-        iconBg: "#E6DEDD",
+        icon: logoPlaceholder,
+        iconBg: "#383E56",
         date: "Jun 2017 - Dec 2018",
         points: [
             "Optimized user experience by collaborating with design and product teams to deliver successful feature implementations.",
@@ -189,7 +204,87 @@ export const experiences: ReadonlyArray<IExperience> = [
     },
 ];
 
-export const testimonials: ReadonlyArray<ITestimonials> = [
+export const projects: ReadonlyArray<IProject> = [
+    {
+        id: 1,
+        name: "Devsteam",
+        description:
+            "Full dynamic SSR application using Next, React, Tailwind, TypeScript, SCSS",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                id: 3,
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: devsteam,
+        // source_code_link: "https://github.com/",
+        app_link: "https://devsteam.ir/"
+    },
+    {
+        id: 2,
+        name: "Job IT",
+        description:
+            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "restapi",
+                color: "green-text-gradient",
+            },
+            {
+                id: 3,
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/",
+        app_link: "https://github.com/"
+    },
+    {
+        id: 3,
+        name: "Trip Guide",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                id: 1,
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                id: 3,
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/"
+    },
+];
+
+export const testimonials: ReadonlyArray<ITestimonial> = [
     {
         id: 1,
         testimonial:
@@ -216,74 +311,5 @@ export const testimonials: ReadonlyArray<ITestimonials> = [
         designation: "CTO",
         company: "456 Enterprises",
         image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
-
-export const projects: ReadonlyArray<IProjects> = [
-    {
-        id: 1,
-        name: "Car Rent",
-        description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        id: 2,
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        id: 3,
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
     },
 ];
