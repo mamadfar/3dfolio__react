@@ -1,0 +1,10 @@
+export {default as Hero} from "./Hero";
+export {default as Navbar} from "./Navbar";
+export {default as Menu} from "./Menu";
+export {default as CanvasLoader} from "./CanvasLoader";
+export {default as About} from "./about/About";
+export {default as Tech} from "./Tech";
+export {default as Experience} from "./experience/Experience";
+export {default as Works} from "./Works";
+export {default as Feedbacks} from "./Feedbacks";
+export {default as Contact} from "./Contact";
