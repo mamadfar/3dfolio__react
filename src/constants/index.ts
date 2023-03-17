@@ -15,14 +15,11 @@ import {
     git,
     // figma,
     docker,
-    citronity,
-    hamimohajer,
+    citronityLogo,
+    hamimohajerLogo,
     logoPlaceholder,
-    // carrent,
-    jobit,
-    tripguide,
     // threejs,
-    next, sass, antDesign, bootstrap, devsteam
+    next, sass, antDesign, bootstrap, devsteam, dappazon, blog, airbnb, shareme, codex, gpt3Ui, hamimohajer, person
 } from "../assets";
 import {IExperience, INavLink, IProject, IService, ITechnology, ITestimonial} from "../models/constants.model";
 
@@ -152,7 +149,7 @@ export const experiences: ReadonlyArray<IExperience> = [
         id: 1,
         title: "Senior Front End Engineer",
         company_name: "Citronity",
-        icon: citronity,
+        icon: citronityLogo,
         iconBg: "#383E56",
         date: "Oct 2021 - Present",
         points: [
@@ -166,7 +163,7 @@ export const experiences: ReadonlyArray<IExperience> = [
         id: 2,
         title: "Senior Front End Engineer",
         company_name: "Hamimohajer",
-        icon: hamimohajer,
+        icon: hamimohajerLogo,
         iconBg: "#383E56",
         date: "Oct 2020 - Oct 2021",
         points: [
@@ -207,9 +204,9 @@ export const experiences: ReadonlyArray<IExperience> = [
 export const projects: ReadonlyArray<IProject> = [
     {
         id: 1,
-        name: "Devsteam",
+        name: "Devsteam - Portfolio",
         description:
-            "Full dynamic SSR application using Next, React, Tailwind, TypeScript, SCSS",
+            "Full dynamic SSR application using Next, React, Tailwind, TypeScript, and SCSS.",
         tags: [
             {
                 id: 1,
@@ -218,12 +215,22 @@ export const projects: ReadonlyArray<IProject> = [
             },
             {
                 id: 2,
-                name: "mongodb",
-                color: "green-text-gradient",
+                name: "nextjs",
+                color: "text-gray-600",
             },
             {
                 id: 3,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 4,
                 name: "tailwind",
+                color: "text-cyan-500",
+            },
+            {
+                id: 5,
+                name: "scss",
                 color: "pink-text-gradient",
             },
         ],
@@ -233,9 +240,9 @@ export const projects: ReadonlyArray<IProject> = [
     },
     {
         id: 2,
-        name: "Job IT",
+        name: "Dappazon",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A small Amazon clone with Smart Contract on Blockchain using Solidity, Hardhat, React, and TypeScript",
         tags: [
             {
                 id: 1,
@@ -244,43 +251,223 @@ export const projects: ReadonlyArray<IProject> = [
             },
             {
                 id: 2,
-                name: "restapi",
+                name: "solidity",
+                color: "text-gray-700",
+            },
+            {
+                id: 3,
+                name: "hardhat",
+                color: "text-yellow-300",
+            },
+            {
+                id: 4,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 5,
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: dappazon,
+        source_code_link: "https://github.com/mamadfar/dappazon__solidity",
+        // app_link: "https://github.com/"
+    },
+    {
+        id: 3,
+        name: "Blog",
+        description:
+            "A small blog with authentication and a rich editor using React, TypeScript, Node, Express, MySQL, and SCSS",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "node",
                 color: "green-text-gradient",
+            },
+            {
+                id: 3,
+                name: "mysql",
+                color: "text-blue-900",
+            },
+            {
+                id: 4,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 5,
+                name: "scss",
+                color: "pink-text-gradient",
+            }
+        ],
+        image: blog,
+        source_code_link: "https://github.com/mamadfar/blog__react-node-mysql__fullstack"
+    },
+    {
+        id: 4,
+        name: "Airbnb Clone",
+        description:
+            "Airbnb clone using TypeScript, Tailwind, Next13, and MapBox",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "nextjs",
+                color: "text-gray-600",
+            },
+            {
+                id: 3,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 4,
+                name: "tailwind",
+                color: "text-cyan-500",
+            },
+            {
+                id: 5,
+                name: "mapbox",
+                color: "text-blue-300",
+            },
+        ],
+        image: airbnb,
+        source_code_link: "https://github.com/mamadfar/airbnb-clone__nextjs",
+        app_link: "https://airbnb-clone-ebon-one.vercel.app/"
+    },
+    {
+        id: 5,
+        name: "Shareme",
+        description:
+            "A full-stack Social media app using React, Typescript, Tailwind, Google Auth, and Sanity",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "sanity",
+                color: "text-red-500",
+            },
+            {
+                id: 3,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 4,
+                name: "tailwind",
+                color: "text-cyan-500",
+            },
+            {
+                id: 5,
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: shareme,
+        source_code_link: "https://github.com/mamadfar/shareme__fullstack",
+        app_link: "https://sharemeeeeee.netlify.app/login/"
+    },
+    {
+        id: 6,
+        name: "Chat GPT-3",
+        description:
+            "A full-stack chat GPT AI application with a speaker using React, Vite, Node, Express, TypeScript, and SCSS",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "node",
+                color: "green-text-gradient",
+            },
+            {
+                id: 3,
+                name: "vite",
+                color: "text-purple-400",
+            },
+            {
+                id: 4,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 5,
+                name: "scss",
+                color: "pink-text-gradient",
+            }
+        ],
+        image: codex,
+        source_code_link: "https://github.com/mamadfar/chatgpt",
+        app_link: "https://chatgpt-livid.vercel.app/"
+    },
+    {
+        id: 7,
+        name: "GPT-3 UI",
+        description:
+            "A fully responsive website using React, TypeScript, and SCSS",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "typescript",
+                color: "text-blue-700",
             },
             {
                 id: 3,
                 name: "scss",
                 color: "pink-text-gradient",
-            },
+            }
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-        app_link: "https://github.com/"
+        image: gpt3Ui,
+        source_code_link: "https://github.com/mamadfar/gpt3-ui",
+        app_link: "https://mamadfar.github.io/gpt3-ui/"
     },
     {
-        id: 3,
-        name: "Trip Guide",
+        id: 8,
+        name: "Hamimohajer",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Immigration Company website using Laravel, Bootstrap, JavaScript, and SCSS",
         tags: [
             {
                 id: 1,
-                name: "nextjs",
-                color: "blue-text-gradient",
+                name: "bootstrap",
+                color: "text-purple-600",
             },
             {
                 id: 2,
-                name: "supabase",
-                color: "green-text-gradient",
+                name: "javascript",
+                color: "text-yellow-500",
             },
             {
                 id: 3,
-                name: "css",
+                name: "scss",
                 color: "pink-text-gradient",
-            },
+            }
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/"
+        image: hamimohajer,
+        // source_code_link: "https://github.com/mamadfar/gpt3-ui",
+        app_link: "https://hamimohajer.com/"
     },
 ];
 
@@ -288,28 +475,28 @@ export const testimonials: ReadonlyArray<ITestimonial> = [
     {
         id: 1,
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+            "I thought it was impossible to make a website as beautiful as our product, but Mohammad proved me wrong.",
         name: "Sara Lee",
         designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        company: "Boinabrasa",
+        image: person,
     },
     {
         id: 2,
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Mohammad is professionally deep into his front-end skills and truly cares about their clients' success.",
+        name: "Ashkan Golehpoor",
+        designation: "Data Engineer",
+        company: "Arz Digital",
+        image: "https://atabakhooshangi.ir:/media/profile_photos/ashkan_golehpoor.jpeg",
     },
     {
         id: 3,
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
+            "After Mohammad optimized our website, our traffic increased by 50%. We can't thank him enough!",
+        name: "Mohammad Rad",
         designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+        company: "Hamimohajer",
+        image: person,
     },
 ];

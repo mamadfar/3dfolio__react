@@ -18,7 +18,7 @@ const ProjectCard: FC<IProjectCardProps> = ({index, name, description, tags, ima
                 className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full flex flex-col"
             >
                 <div className="relative w-full h-[230px]">
-                    <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl"/>
+                    <img src={image} alt={name} className="w-full h-full rounded-2xl"/>
                     <div className="absolute inset-0 flex m-3 card-img_hover">
                         {source_code_link && (
                             <a className="black-gradient mr-auto w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -40,7 +40,7 @@ const ProjectCard: FC<IProjectCardProps> = ({index, name, description, tags, ima
                 </div>
                 <div className="flex flex-wrap gap-2 mt-auto">
                     {tags.map(tag => (
-                        <p key={tag.id} className={`text-sm mt-4 ${tag.color}`}>#{tag.name}</p>
+                        <p key={tag.id} className={`text-xs mt-4 ${tag.color}`}>#{tag.name}</p>
                     ))}
                 </div>
             </Tilt>

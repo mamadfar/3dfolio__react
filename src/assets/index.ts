@@ -8,8 +8,8 @@ export {default as creator} from "./creator.png";
 export {default as mobile} from "./mobile.png";
 export {default as web} from "./web.png";
 //* Companies
-export {default as citronity} from "./company/citronity.png";
-export {default as hamimohajer} from "./company/hamimohajer.png";
+export {default as citronityLogo} from "./company/citronity.png";
+export {default as hamimohajerLogo} from "./company/hamimohajer.png";
 export {default as logoPlaceholder} from "./company/logo-placeholder.png";
 //* Technologies
 export {default as css} from "./tech/css.png";
@@ -30,10 +30,16 @@ export {default as next} from "./tech/next.png";
 export {default as antDesign} from "./tech/ant-design.png";
 export {default as bootstrap} from "./tech/bootstrap.png";
 //* Work Samples
-export {default as carrent} from "./work-samples/carrent.png";
-export {default as jobit} from "./work-samples/jobit.png";
-export {default as tripguide} from "./work-samples/tripguide.png";
 export {default as devsteam} from "./work-samples/new-devsteam.png";
+export {default as dappazon} from "./work-samples/dappazon.png";
+export {default as blog} from "./work-samples/blog.png";
+export {default as airbnb} from "./work-samples/airbnb.png";
+export {default as shareme} from "./work-samples/shareme.png";
+export {default as codex} from "./work-samples/codex.png";
+export {default as gpt3Ui} from "./work-samples/gpt3-ui.png";
+export {default as hamimohajer} from "./work-samples/mohammad_hamimohajer-new.png";
 //* Work Samples Navigator
 export {default as link} from "./link.png";
 export {default as github} from "./github.png";
+//* Feedback
+export {default as person} from "./person-placeholder.png";
