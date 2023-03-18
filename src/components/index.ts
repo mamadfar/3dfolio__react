@@ -8,3 +8,4 @@ export {default as Experience} from "./experience/Experience";
 export {default as Works} from "./works/Works";
 export {default as Feedbacks} from "./testimonial/Feedbacks";
 export {default as Contact} from "./Contact";
+export {default as Input} from "./Input";
