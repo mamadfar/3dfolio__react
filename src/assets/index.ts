@@ -38,6 +38,7 @@ export {default as shareme} from "./work-samples/shareme.png";
 export {default as codex} from "./work-samples/codex.png";
 export {default as gpt3Ui} from "./work-samples/gpt3-ui.png";
 export {default as hamimohajer} from "./work-samples/mohammad_hamimohajer-new.png";
+export {default as threeDFolio} from "./work-samples/3dfolio.png";
 //* Work Samples Navigator
 export {default as link} from "./link.png";
 export {default as github} from "./github.png";

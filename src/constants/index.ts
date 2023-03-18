@@ -19,7 +19,20 @@ import {
     hamimohajerLogo,
     logoPlaceholder,
     // threejs,
-    next, sass, antDesign, bootstrap, devsteam, dappazon, blog, airbnb, shareme, codex, gpt3Ui, hamimohajer, person
+    next,
+    sass,
+    antDesign,
+    bootstrap,
+    devsteam,
+    dappazon,
+    blog,
+    airbnb,
+    shareme,
+    codex,
+    gpt3Ui,
+    hamimohajer,
+    person,
+    threeDFolio
 } from "../assets";
 import {IExperience, INavLink, IProject, IService, ITechnology, ITestimonial} from "../models/constants.model";
 
@@ -468,6 +481,41 @@ export const projects: ReadonlyArray<IProject> = [
         image: hamimohajer,
         // source_code_link: "https://github.com/mamadfar/gpt3-ui",
         app_link: "https://hamimohajer.com/"
+    },
+    {
+        id: 8,
+        name: "3D Portfolio",
+        description:
+            "My 3D Portfolio using React, Vite, TypeScript, Tailwind, Three.js, Framer Motion, and Email.js.",
+        tags: [
+            {
+                id: 1,
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                id: 2,
+                name: "threejs",
+                color: "text-white-500",
+            },
+            {
+                id: 3,
+                name: "typescript",
+                color: "text-blue-700",
+            },
+            {
+                id: 4,
+                name: "tailwind",
+                color: "text-cyan-500",
+            },
+            {
+                id: 5,
+                name: "framer",
+                color: "text-pink-300",
+            }
+        ],
+        image: threeDFolio,
+        source_code_link: "https://github.com/mamadfar/3dfolio__react"
     },
 ];
 
